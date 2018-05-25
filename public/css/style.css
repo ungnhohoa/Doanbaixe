@@ -1,0 +1,11 @@
+@font-face{
+	font-family: "Roboto Slab";
+	src : url('../fonts/RobotoSlab-Regular.ttf');
+}
+
+body{
+	background-color: #fff;
+	font-family: "Roboto Slab";
+	font-size: 15px;
+	line-height: 20px;
+}
