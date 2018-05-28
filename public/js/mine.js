@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             for (var i = 0; i < length; i++) {
                 if (value["Xe " + (i + 1)] == "stored") {
                     //document.getElementById("Xe" + (i + 1)).innerHTML = "Có xe";
-                    document.getElementById("Xe" + (i + 1)).src ="xe.jpg";
+                    document.getElementById("Xe" + (i + 1)).src ="xe.png";
                 } else if (value["Xe " + (i + 1)] == "empty") {
                     document.getElementById("Xe" + (i + 1)).innerHTML = "Trống";
                 }
