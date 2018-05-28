@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
             var value = snapshot.val();
             for (var i = 0; i < length; i++) {
                 if (value["Xe " + (i + 1)] == "stored") {
-                    document.getElementById("Xe" + (i + 1)).innerHTML = "Có xe";
+                    //document.getElementById("Xe" + (i + 1)).innerHTML = "Có xe";
+                    document.getElementById("Xe" + (i + 1)).src ="xe.jpg";
                 } else if (value["Xe " + (i + 1)] == "empty") {
                     document.getElementById("Xe" + (i + 1)).innerHTML = "Trống";
                 }
