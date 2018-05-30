@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 } else if (value["Xe " + (i + 1)] == "empty") {
                     //document.getElementById("Xe" + (i + 1)).innerHTML = "Trống";
-                    document.getElementById("Xe" + (i + 1)).src = "https://upload.wikimedia.org/wikipedia/commons/4/42/Smiley_face_example_true_C.jpg";
+                    document.getElementById("Xe" + (i + 1)).src = "https://upload.wikimedia.org/wikipedia/commons/1/11/Hinweiszeichen_17a_empty.jpg";
                 }
             }
         }, function (error) {
