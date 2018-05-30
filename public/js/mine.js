@@ -15,6 +15,20 @@ document.addEventListener("DOMContentLoaded", function () {
     //    var list = document.getElementsByClassName("status");
         ref.on("value", function (snapshot) {
             var value = snapshot.val();
+            if(value["In"]=="stored"){
+                   document.getElementById("XeIn").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG6gn27EtmFP5GYIV7DVIkWBMI47c4Kl7Wg8zUD8w4F2VP4cPN";
+
+            }
+            else{
+                   document.getElementById("XeIn").src = "https://upload.wikimedia.org/wikipedia/commons/1/11/Hinweiszeichen_17a_empty.jpg";
+            }
+              if(value["Out"]=="stored"){
+                   document.getElementById("XeOut").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG6gn27EtmFP5GYIV7DVIkWBMI47c4Kl7Wg8zUD8w4F2VP4cPN";
+
+            }
+            else{
+                   document.getElementById("XeOut").src = "https://upload.wikimedia.org/wikipedia/commons/1/11/Hinweiszeichen_17a_empty.jpg";
+            }
             for (var i = 0; i < 7; i++) {
                 if (value["Xe " + (i + 1)] == "stored") {
                    // document.getElementById("Xe" + (i + 1)).innerHTML = "Có xe";
