@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
         firebase.initializeApp(config);
 
         var ref = firebase.database().ref();
-        var length = document.getElementsByClassName("status").length;
-        var list = document.getElementsByClassName("status");
+  //      var length = document.getElementsByClassName("status").length;
+    //    var list = document.getElementsByClassName("status");
         ref.on("value", function (snapshot) {
             var value = snapshot.val();
-            for (var i = 0; i < length; i++) {
+            for (var i = 0; i < 7; i++) {
                 if (value["Xe " + (i + 1)] == "stored") {
                    // document.getElementById("Xe" + (i + 1)).innerHTML = "Có xe";
                    document.getElementById("Xe" + (i + 1)).src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG6gn27EtmFP5GYIV7DVIkWBMI47c4Kl7Wg8zUD8w4F2VP4cPN";
