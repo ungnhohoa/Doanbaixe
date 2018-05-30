@@ -17,9 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
             var value = snapshot.val();
             for (var i = 0; i < length; i++) {
                 if (value["Xe " + (i + 1)] == "stored") {
-                    document.getElementById("Xe" + (i + 1)).innerHTML = "Có xe";
+                   // document.getElementById("Xe" + (i + 1)).innerHTML = "Có xe";
+                   document.getElementById("Xe" + (i + 1)).src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG6gn27EtmFP5GYIV7DVIkWBMI47c4Kl7Wg8zUD8w4F2VP4cPN";
+
                 } else if (value["Xe " + (i + 1)] == "empty") {
-                    document.getElementById("Xe" + (i + 1)).innerHTML = "Trống";
+                    //document.getElementById("Xe" + (i + 1)).innerHTML = "Trống";
+                    document.getElementById("Xe" + (i + 1)).src = "https://upload.wikimedia.org/wikipedia/commons/4/42/Smiley_face_example_true_C.jpg";
                 }
             }
         }, function (error) {
